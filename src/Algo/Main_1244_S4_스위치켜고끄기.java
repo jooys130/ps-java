@@ -1,7 +1,9 @@
+package Algo;
+
 import java.io.*;
 import java.util.*;
 
-public class Main_1244_S4_스위치켜고끄기_주연수 {
+public class Main_1244_S4_스위치켜고끄기 {
 
     /*
         수행 시간: 148ms

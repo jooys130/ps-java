@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -27,6 +25,10 @@ public class BOJ_S3_2910_빈도정렬 {
         (추가)
         LinkedHashMap을 사용하면 순서를 저장할 수 있다
         생성한 HashMap에 대해 keySet 기준으로 빈도수만 비교해서 정렬한다
+        링크 :
+
+        (객체로 정렬한다면)
+        링크 :
      */
 
     public static void main(String[] args) throws IOException {
@@ -42,7 +44,8 @@ public class BOJ_S3_2910_빈도정렬 {
 
         HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
         for (int i = 0; i < N; i++) {
-            ArrayList<Integer> value = new ArrayList<Integer>();
+            // 크기를 미리 아니까 지정하기
+            ArrayList<Integer> value = new ArrayList<>(2);
             value.add(i); value.add(1); // order count
             if (map.containsKey(arr[i])) {
                 value.set(0, map.get(arr[i]).get(0));

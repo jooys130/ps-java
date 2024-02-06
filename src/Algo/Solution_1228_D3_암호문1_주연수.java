@@ -35,6 +35,11 @@ public class Solution_1228_D3_암호문1_주연수 {
                     for (int l = 0; l < y; l++) {
                         arr.add(x++, Integer.parseInt(st.nextToken()));
                     }
+                    /*
+                        (다른 방법)
+                        1. 새로운 연결 리스트 생성하여 arr에 addAll()
+                        2. x++ 대신 (x + l)
+                     */
                 }
             }
             sb.append("#" + i);

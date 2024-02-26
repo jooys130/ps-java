@@ -4,7 +4,7 @@ package graph;
 import java.io.*;
 import java.util.*;
 
-public class Solution_1238_D4_Contact_주연수 {
+public class Solution_1238_D4_Contact {
     static int N, start;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

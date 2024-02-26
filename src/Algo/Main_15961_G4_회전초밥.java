@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_G4_15961_회전초밥 {
+public class Main_15961_G4_회전초밥 {
     /*
      * 시간: 548 ms
      * 메모리: 170892 kb

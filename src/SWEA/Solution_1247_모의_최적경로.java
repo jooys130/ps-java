@@ -1,28 +1,22 @@
-package Algo;
+package SWEA;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-/*
- * 실행시간: 1,158 ms
- * 메모리: 20,300 kb
- */
+public class Solution_1247_모의_최적경로 {
 
-class Pos {
+    static class Pos {
 
-    int x;
-    int y;
+        int x;
+        int y;
 
-    Pos(int x, int y) {
-        this.x = x;
-        this.y = y;
+        Pos(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
-}
-
-public class Solution_1247_최적경로_주연수 {
-
     static int N;
     static Pos home, company;
     static Pos[] clients;

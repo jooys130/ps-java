@@ -1,29 +1,28 @@
-package Algo;
+package SWEA;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-class AP {
-    int x;
-    int y;
-    int c;
-    int p;
 
-    public AP(int x, int y, int c, int p) {
-        this.x = x;
-        this.y = y;
-        this.c = c;
-        this.p = p;
-    }
-}
-
-
-public class Solution_5644_무선충전_주연수 {
+public class Solution_5644_모의_무선충전 {
 
     static int M, A;
     static int[] moveA, moveB;
+    static class AP {
+        int x;
+        int y;
+        int c;
+        int p;
+
+        public AP(int x, int y, int c, int p) {
+            this.x = x;
+            this.y = y;
+            this.c = c;
+            this.p = p;
+        }
+    }
     static AP[] aps;
     static int[] dx = {0, -1, 0, 1, 0};
     static int[] dy = {0, 0, 1, 0, -1};
@@ -60,8 +59,8 @@ public class Solution_5644_무선충전_주연수 {
             }
 
 
-            int xA = 1; int xB = 10;
-            int yA = 1; int yB = 10;
+            int xA = 1; int yA = 1;
+            int xB = 10; int yB = 10;
             int ans = 0;
             for (int i = 0; i < M+1; i++) {
                 xA += dx[moveA[i]];
@@ -74,6 +73,7 @@ public class Solution_5644_무선충전_주연수 {
         }
     }
     private static int check(int xA, int yA, int xB, int yB) {
+//        System.out.println(xA + " " + yA + " " + xB + " " + yB);
         int max = 0;
         for (int a = 0; a < A; a++) {
             for (int b = 0; b < A; b++) {
@@ -92,8 +92,8 @@ public class Solution_5644_무선충전_주연수 {
     }
     private static int charge(int k, int x, int y) {
         int dis = Math.abs(aps[k].x - x) + Math.abs(aps[k].y - y);
+        //
         if (dis <= aps[k].c) return aps[k].p;
         return 0;
     }
-
 }

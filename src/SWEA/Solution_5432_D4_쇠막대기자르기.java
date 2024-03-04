@@ -12,17 +12,16 @@ public class Solution_5432_D4_쇠막대기자르기 {
         for (int tc = 1; tc <= T; tc++) {
             sb.append("#").append(tc).append(" ");
             char[] input = br.readLine().toCharArray();
-            ArrayList<Character> stack = new ArrayList<>();
+            Queue<Character> stack = new ArrayDeque<>();
             int ans = 0;
             for (int i = 0; i < input.length; i++) {
                 if (input[i] == '(') {
                     stack.add(input[i]);
                 } else {
+                    stack.remove();
                     if (input[i-1] == '(') {
-                        stack.remove(stack.size()-1);
                         ans += stack.size();
                     } else {
-                        stack.remove(stack.size()-1);
                         ans += 1;
                     }
                 }

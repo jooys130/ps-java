@@ -3,7 +3,7 @@ package SSWAT;
 import java.io.*;
 import java.util.*;
 
-public class BoJ14502 {
+public class Main_14502_G4_연구소 {
 
     static final int[] dx = {-1, 0, 1, 0};
     static final int[] dy = {0, -1, 0, 1};

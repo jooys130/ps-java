@@ -1,27 +1,22 @@
-package backtracking;
+package SSWAT;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
-
-class Pos {
-
-    int x;
-    int y;
-
-    public Pos(int x, int y) {
-        this.x = x;
-        this.y = y;
-    };
-}
+import java.io.*;
+import java.util.*;
 
 public class BoJ14502 {
 
     static final int[] dx = {-1, 0, 1, 0};
     static final int[] dy = {0, -1, 0, 1};
+    static class Pos {
+
+        int x;
+        int y;
+
+        public Pos(int x, int y) {
+            this.x = x;
+            this.y = y;
+        };
+    }
     static int N, M;
     static int[][] map;
     static int answer = 0;

@@ -1,4 +1,4 @@
-package backtracking;
+package SSWAT;
 
 import java.io.BufferedReader;
 import java.io.IOException;

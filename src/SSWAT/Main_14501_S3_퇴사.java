@@ -1,11 +1,11 @@
-package dp;
+package SSWAT;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BoJ14501 {
+public class Main_14501_S3_퇴사 {
 
     static int N;
     static int[] T; // 상담 기간

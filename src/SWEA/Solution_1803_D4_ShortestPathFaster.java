@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Solution_1803_ShortestPathFaster {
+public class Solution_1803_D4_ShortestPathFaster {
     static int N, M;
     static class Node implements Comparable<Node>{
         int vertex;
@@ -72,7 +72,7 @@ public class Solution_1803_ShortestPathFaster {
             visited[cur] = true;
             for (Node next : adjList[cur]) {
 //                System.out.println(next);
-                if (next.cost + minEdge[cur] < minEdge[next.vertex]) {
+                if (!visited[next.vertex] && next.cost + minEdge[cur] < minEdge[next.vertex]) {
                     minEdge[next.vertex] = next.cost + minEdge[cur];
                     q.add(next.vertex);
                 }

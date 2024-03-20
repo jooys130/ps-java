@@ -1,4 +1,4 @@
-package BOJ;
+package SSWAT;
 
 import java.util.*;
 import java.io.*;

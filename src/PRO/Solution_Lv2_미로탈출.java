@@ -1,7 +1,7 @@
 package PRO;
 
 import java.util.*;
-class Solution {
+class Solution_Lv2_미로탈출 {
     static int R, C;
     static char[][] map;
     static boolean[][] visited;

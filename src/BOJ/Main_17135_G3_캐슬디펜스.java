@@ -1,9 +1,9 @@
-package Algo;
+package BOJ;
 
 import java.io.*;
 import java.util.*;
 
-public class Main_17135_G3_캐슬디펜스_주연수 {
+public class Main_17135_G3_캐슬디펜스 {
 
     static int N, M, D;
     static int[][] map;

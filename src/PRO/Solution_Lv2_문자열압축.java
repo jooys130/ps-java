@@ -1,6 +1,6 @@
 package PRO;
 
-class Soultion_Lv2_문자열압축 {
+class Solution_Lv2_문자열압축 {
     static int ans = Integer.MAX_VALUE;
     static int LEN;
     static StringBuilder sb;

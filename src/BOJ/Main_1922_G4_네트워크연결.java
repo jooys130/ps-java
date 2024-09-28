@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class Main_1922_G4_네트워크연결 {
     static int V, E;
     static boolean[] visited;
-    static ArrayList<Node>[] edges; // 간선 기반으로
+    static ArrayList<Node>[] edges;
 
     static class Node implements Comparable<Node> {
         int to;

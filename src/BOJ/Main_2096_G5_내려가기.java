@@ -15,7 +15,7 @@ public class Main_2096_G5_내려가기 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
         map = new int[N][3];
-        minDp = new int[N]:q!:q!
+        minDp = new int[N][3];
     [3];
         maxDp = new int[N][3];
         for (int i = 0; i < N; i++) {
